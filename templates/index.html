@@ -9,47 +9,56 @@
    <h1>
        BlockChain
    </h1>
+    <h3>Make transactions</h3>
+
+    <br>
+    <br>
 
 
-    <table>
+    <form action="/" method="POST">
+
+        <table>
 
         <tr>
             <th>Sender Name</th>
             <th>
-                <form action="/" method="POST">
-                    <input type="text" name="sender">
-                </form>
+
+                <input type="text" name="sender">
+
             </th>
         </tr>
 
         <tr>
             <th>Receiver Name</th>
             <th>
-                <form action="/" method="POST">
-                    <input type="text" name="receiver" id="receiver">
-                </form>
+
+                <input type="text" name="receiver" id="receiver">
+
             </th>
         </tr>
 
         <tr>
             <th>Amount</th>
             <th>
-                <form action="/" method="POST">
-                    <input type="text" name="amount" id="amount">
-                </form>
+
+                <input type="text" name="amount" id="amount">
+
             </th>
         </tr>
 
     </table>
-    <br>
 
-    <form action="/" method="POST">
+        <br>
         <input type="submit" name="Submit" id="submit">
+
     </form>
-    <br>
+
+
+
     <br>
 
-    <h4>See all tensactions</h4>
+
+    <a href="all_transaction">see all transaction</a>
 
 
 

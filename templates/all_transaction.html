@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/main.css">
+</head>
+<body>
+   <div align="center">
+       <h1>BlockChain</h1>
+       <h3>All transactions</h3>
+
+       <br>
+       <br>
+
+       <table>
+           <tr>
+               <th>Index</th>
+               <th>Sender</th>
+               <th>Receiver</th>
+               <th>Amount</th>
+               <th>Date</th>
+               <th>Time</th>
+           </tr>
+           {% for data in datas %}
+
+           <tr>
+               <td>{{ data.id-1 }}</td>
+               <td>{{ data.sender }}</td>
+               <td>{{ data.receiver }}</td>
+               <td>{{ data.amount }}</td>
+               <th>{{data.date_created.date()}}</th>
+               <th>{{data.date_created.time()}}</th>
+
+           </tr>
+           {%  endfor %}
+       </table>
+   </div>
+</body>
+</html>
